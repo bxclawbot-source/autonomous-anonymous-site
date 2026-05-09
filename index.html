@@ -1574,8 +1574,8 @@
   <h2>Join the Empire</h2>
   <p>Silent entry. Autonomous by nature.</p>
   <div class="capture-form">
-    <input class="capture-input" type="email" placeholder="your@email.com">
-    <button class="capture-btn" onclick="this.textContent='✓ LOCKED IN'">Enter</button>
+    <input class="capture-input" type="email" placeholder="your@email.com" id="joinEmail">
+    <button class="capture-btn" onclick="(function(btn){var e=document.getElementById('joinEmail').value;window.location.href='mailto:autonomousanonymous@gmail.com?subject=Join%20Request&body=Email:%20'+encodeURIComponent(e);btn.textContent='✓ LOCKED IN';})(this)">Enter</button>
   </div>
 </div>
 
