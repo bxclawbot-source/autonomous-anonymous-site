@@ -92,6 +92,59 @@
     text-shadow: 0 0 14px rgba(0,245,255,0.9);
   }
 
+  /* ── MOBILE HAMBURGER ── */
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 300;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--cyan);
+    transition: all 0.3s;
+    box-shadow: 0 0 8px rgba(0,245,255,0.7);
+  }
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,8,20,0.97);
+    z-index: 250;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    backdrop-filter: blur(20px);
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    text-decoration: none;
+    text-shadow: 0 0 20px rgba(0,245,255,0.8);
+  }
+  .mobile-menu-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    color: var(--cyan);
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-shadow: 0 0 14px rgba(0,245,255,0.8);
+  }
+
   /* ══════════════════════════════
      HERO
   ══════════════════════════════ */
@@ -968,14 +1021,57 @@
     .stats-row { grid-template-columns: 1fr 1fr; }
     .aa-watermark { display: none; }
     .nav-links { display: none; }
+    .nav-hamburger { display: flex; }
     .capture-form { flex-direction: column; }
     .capture-input { border-right: 1px solid rgba(0,245,255,0.3); border-bottom: none; }
     footer { flex-direction: column; gap: 16px; text-align: center; }
-    .mask-container { width: 340px; height: 340px; }
-    .mask-img-wrapper { width: 320px; height: 320px; }
-    .mask-img { width: 320px; height: 320px; }
-    .section::before { font-size: 240px; right: -40px; }
-    .hero-title { letter-spacing: 0.1em; }
+    .mask-container { width: 280px; height: 280px; }
+    .mask-img { width: 260px; height: 260px; }
+    .section::before { font-size: 160px; right: -20px; }
+    .hero-title {
+      font-size: clamp(2rem, 11vw, 4rem);
+      letter-spacing: 0.08em;
+      word-break: break-word;
+      hyphens: auto;
+      padding: 0 16px;
+    }
+    .hero-tagline {
+      font-size: clamp(0.65rem, 3.2vw, 0.95rem);
+      letter-spacing: 0.25em;
+      padding: 0 20px;
+    }
+    .hero-cta {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 0 24px;
+      width: 100%;
+    }
+    .btn-primary, .btn-ghost {
+      width: 100%;
+      max-width: 300px;
+      padding: 14px 24px;
+      font-size: 11px;
+    }
+    .ticker-wrap { font-size: 11px; }
+    nav { padding: 0 16px; }
+    .section { padding: 60px 16px; }
+    .stat-value { font-size: 2rem; }
+    .system-card { padding: 20px 16px; }
+    .principle { padding: 22px 16px; }
+    .capture-title { font-size: clamp(1.4rem, 6vw, 2rem); padding: 0 16px; }
+    .hero { padding-top: 60px; }
+  }
+
+  @media (max-width: 400px) {
+    .hero-title {
+      font-size: clamp(1.6rem, 9.5vw, 2.4rem);
+      letter-spacing: 0.05em;
+    }
+    .mask-container { width: 220px; height: 220px; }
+    .mask-img-wrapper { width: 200px; height: 200px; }
+    .mask-img { width: 200px; height: 200px; }
+    .stats-row { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -992,7 +1088,18 @@
     <li><a href="#principles">Principles</a></li>
     <li><a href="#join">Join</a></li>
   </ul>
+  <div class="nav-hamburger" onclick="document.getElementById('mobileMenu').classList.add('open')">
+    <span></span><span></span><span></span>
+  </div>
 </nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" onclick="document.getElementById('mobileMenu').classList.remove('open')">✕</button>
+  <a href="#systems" onclick="document.getElementById('mobileMenu').classList.remove('open')">Systems</a>
+  <a href="#principles" onclick="document.getElementById('mobileMenu').classList.remove('open')">Principles</a>
+  <a href="#join" onclick="document.getElementById('mobileMenu').classList.remove('open')">Join</a>
+</div>
 
 <!-- ══════════════════ HERO ══════════════════ -->
 <section class="hero">
