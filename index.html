@@ -1029,11 +1029,13 @@
     .mask-img { width: 260px; height: 260px; }
     .section::before { font-size: 160px; right: -20px; }
     .hero-title {
-      font-size: clamp(2rem, 11vw, 4rem);
-      letter-spacing: 0.08em;
-      word-break: break-word;
-      hyphens: auto;
-      padding: 0 16px;
+      font-size: clamp(1.4rem, 8.5vw, 4rem);
+      letter-spacing: 0.06em;
+      word-break: keep-all;
+      overflow-wrap: normal;
+      hyphens: none;
+      white-space: normal;
+      padding: 0 12px;
     }
     .hero-tagline {
       font-size: clamp(0.65rem, 3.2vw, 0.95rem);
@@ -1065,8 +1067,13 @@
 
   @media (max-width: 400px) {
     .hero-title {
-      font-size: clamp(1.6rem, 9.5vw, 2.4rem);
-      letter-spacing: 0.05em;
+      font-size: clamp(1.2rem, 7.5vw, 2.4rem);
+      letter-spacing: 0.04em;
+      word-break: keep-all;
+      overflow-wrap: normal;
+      hyphens: none;
+      white-space: normal;
+      padding: 0 8px;
     }
     .mask-container { width: 220px; height: 220px; }
     .mask-img-wrapper { width: 200px; height: 200px; }
