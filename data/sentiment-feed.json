@@ -1,43 +1,37 @@
 {
-  "generated_at": "2026-05-13T05:22:19.463719Z",
-  "signals_timestamp": "2026-05-13T00:00:20.588419Z",
+  "generated_at": "2026-05-13T10:02:27.115961Z",
+  "signals_timestamp": "2026-05-13T10:00:38.575725+00:00",
   "version": "1.0",
   "source": "Autonomous Anonymous \u2014 Bittensor SN22 Desearch Miner",
   "description": "Daily crypto sentiment scores derived from AI-powered web search mining on Bittensor SN22. Updated every 24h.",
   "sentiment": {
     "BTC": {
-      "score": 0.0952,
-      "direction": "BULLISH",
-      "price_usd": 81094
+      "score": 0.0,
+      "direction": "NEUTRAL",
+      "price_usd": 81250
     },
     "ETH": {
       "score": 0.0,
       "direction": "NEUTRAL",
-      "price_usd": 2300.88
+      "price_usd": 2320.22
     },
     "SOL": {
       "score": 0.0,
       "direction": "NEUTRAL",
-      "price_usd": 95.21
+      "price_usd": 95.69
     },
     "TAO": {
       "score": 0.0,
       "direction": "NEUTRAL",
-      "price_usd": 309.56
+      "price_usd": 307.88
     }
   },
   "composite": {
-    "score": 0.0931,
-    "direction": "BULLISH",
-    "macro_sentiment": 0.201
+    "score": 0.0,
+    "direction": "NEUTRAL",
+    "macro_sentiment": 0.0
   },
-  "top_headlines": [
-    "According to our Bitcoin price prediction, BTC is forecasted to trade within a price range of $ 81,256 and $ 85,593 this",
-    "According to our model, the BTC forecast for the next 24 hours suggests that Bitcoin could go up by 1% from its current ",
-    "BTCUSD trades between $80k\u2013$82.5k; 200\u2011day SMA near $82.5k acts as resistance. Daily close above ~$82k could target $94k",
-    "Bitcoin is trading marginally higher near $77,700, consolidating just below resistance after rallying as much as 3% earl",
-    "Check our updated for Bitcoin news, analysis, forecast and technical overview including real time updates and the crypto"
-  ],
+  "top_headlines": [],
   "mining_system": {
     "subnet": "SN22 Desearch",
     "uid": 169,
