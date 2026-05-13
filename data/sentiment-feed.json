@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-05-13T05:22:19.463719Z",
+  "signals_timestamp": "2026-05-13T00:00:20.588419Z",
+  "version": "1.0",
+  "source": "Autonomous Anonymous \u2014 Bittensor SN22 Desearch Miner",
+  "description": "Daily crypto sentiment scores derived from AI-powered web search mining on Bittensor SN22. Updated every 24h.",
+  "sentiment": {
+    "BTC": {
+      "score": 0.0952,
+      "direction": "BULLISH",
+      "price_usd": 81094
+    },
+    "ETH": {
+      "score": 0.0,
+      "direction": "NEUTRAL",
+      "price_usd": 2300.88
+    },
+    "SOL": {
+      "score": 0.0,
+      "direction": "NEUTRAL",
+      "price_usd": 95.21
+    },
+    "TAO": {
+      "score": 0.0,
+      "direction": "NEUTRAL",
+      "price_usd": 309.56
+    }
+  },
+  "composite": {
+    "score": 0.0931,
+    "direction": "BULLISH",
+    "macro_sentiment": 0.201
+  },
+  "top_headlines": [
+    "According to our Bitcoin price prediction, BTC is forecasted to trade within a price range of $ 81,256 and $ 85,593 this",
+    "According to our model, the BTC forecast for the next 24 hours suggests that Bitcoin could go up by 1% from its current ",
+    "BTCUSD trades between $80k\u2013$82.5k; 200\u2011day SMA near $82.5k acts as resistance. Daily close above ~$82k could target $94k",
+    "Bitcoin is trading marginally higher near $77,700, consolidating just below resistance after rallying as much as 3% earl",
+    "Check our updated for Bitcoin news, analysis, forecast and technical overview including real time updates and the crypto"
+  ],
+  "mining_system": {
+    "subnet": "SN22 Desearch",
+    "uid": 169,
+    "status": "active",
+    "sources_indexed": 927
+  },
+  "links": {
+    "website": "https://autonomousanonymous.com",
+    "ocean_listing": "https://market.oceanprotocol.com",
+    "bybit_affiliate": "https://partner.bybit.com/b/AAEMPIRE",
+    "okx_affiliate": "https://okx.com/join/AAEMPIRE"
+  }
+}
