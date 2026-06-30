@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T10:01:00.500002Z",
-  "signals_timestamp": "2026-06-29T10:00:55.924975+00:00",
+  "generated_at": "2026-06-30T10:00:15.628475Z",
+  "signals_timestamp": "2026-06-30T10:00:10.162216+00:00",
   "version": "1.0",
   "source": "Autonomous Anonymous \u2014 Bittensor SN22 Desearch Miner",
   "description": "Daily crypto sentiment scores derived from AI-powered web search mining on Bittensor SN22. Updated every 24h.",
@@ -8,7 +8,7 @@
     "BTC": {
       "score": 0.0,
       "direction": "NEUTRAL",
-      "price_usd": 59969.0
+      "price_usd": 59279.0
     },
     "ETH": {
       "score": 0.0,
@@ -23,7 +23,7 @@
     "TAO": {
       "score": 0.0,
       "direction": "NEUTRAL",
-      "price_usd": 205.47
+      "price_usd": 204.49
     }
   },
   "composite": {
